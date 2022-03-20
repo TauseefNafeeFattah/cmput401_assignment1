@@ -7,10 +7,10 @@ Apache and mod_wsgi was used as server
 In this assignment, you will build a simple REST API and deploy it to a Cybera Rapid Access Cloud instance. You are free to choose any programming language, use any frameworks, packages, modules, libraries, and any database management system (SQL or NoSQL).
 
 Your client is a local coffee roaster. As a part of the back-end, you will develop a REST API that has the following structure of endpoints. 
-Endpoints
+# Endpoints
 You must strictly follow the request and response structure for all endpoints.
 
-List all coffees
+# List all coffees
 /coffees (GET)
 
 Sample response structure (sorts of coffee are sorted by id in ascending order):
@@ -30,7 +30,7 @@ Sample response structure (sorts of coffee are sorted by id in ascending order):
     ]
 }
 
-Retrieve Individual coffee details
+# Retrieve Individual coffee details
 /coffees/{id} (GET)
 
 Sample response structure:
@@ -42,7 +42,7 @@ Sample response structure:
    "price": 25.00
 }
 
-Add a coffee
+# Add a coffee
 /coffees (POST)
 
 Sample request structure (all fields are mandatory):
@@ -62,7 +62,7 @@ Response structure (if successful), where {id} is the id of the new coffee:
   "id": {id},
 }
 
-Update a coffee
+# Update a coffee
 /coffees/{id} (PUT) 
 
 Sample request structure (all fields must be supplied):
@@ -80,7 +80,7 @@ Response structure (if successful):
   "status": 0,
   "message": "Coffee updated",
 }
-Modify a coffee
+# Modify a coffee
 /coffees/{id} (PATCH) 
 
 Sample request structure (any field(s) can be supplied):
@@ -96,7 +96,7 @@ Response structure (if successful):
   "message": "Coffee modified",
 }
 
-Delete a coffee
+# Delete a coffee
 /coffees/{id} (DELETE)
 
 Request: empty
@@ -106,7 +106,7 @@ Response structure (if successful):
   "status": 0,
   "message": "Coffee deleted",
 }
-HTTP Status Codes
+# HTTP Status Codes
 All endpoints must return correct HTTP response codes, including at least the following codes:
 200 (OK), if a request was successfully completed
 404 (Not Found), if the requested resource was not found
