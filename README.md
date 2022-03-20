@@ -108,6 +108,6 @@ Response structure (if successful):
 }
 # HTTP Status Codes
 All endpoints must return correct HTTP response codes, including at least the following codes:
-200 (OK), if a request was successfully completed
-404 (Not Found), if the requested resource was not found
-405 (Method Not Allowed), if the HTTP method was not supported by the resource
+* 200 (OK), if a request was successfully completed
+* 404 (Not Found), if the requested resource was not found
+* 405 (Method Not Allowed), if the HTTP method was not supported by the resource
